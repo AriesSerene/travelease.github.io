@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frequently Asked Questions</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header class="header"> 
+      <img src="multimedia/TravelEase.png" alt="travellogo" class="logo">
+  
+      <!-- <nav class="navbar">
+        <a href="index.html">FAQ</a>
+      </nav> -->
+  
+  
+    </header>
+
+    <div class="wrapper">
+      <h1>Frequently Asked Questions</h1>
+
+      
+
+      <div class="faq">
+        <button class="accordion">
+          What is TravelEase?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="pannel">
+          <p>
+            TravelEase is a cutting-edge transportation card in the Philippines designed to enhance the convenience of travel with its smart transit features. With a name reminiscent of "tra bilis" in Filipino, meaning "let's hurry," TravelEase fulfills its promise by providing swift and seamless access to trains and electronic jeepneys. 
+          </p>
+        </div>
+      </div>
+
+      <div class="faq">
+        <button class="accordion">
+          How does it work?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="pannel">
+          <p>
+            This card allows users to pay for various transportation options, including buses, trains, shared rides, and more, using a single card. 
+          </p>
+        </div>
+      </div>
+
+      <div class="faq">
+        <button class="accordion">
+          How can users manage their TravelEase card usage and transactions?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="pannel">
+          <p>
+            Users can manage their TravelEase card usage and transactions through an online portal or mobile app, where they can monitor their usage history, review transaction details, and assess their travel patterns to make informed transportation choices.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq">
+        <button class="accordion">
+        How does TravelEase improve commuting experience?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="pannel">
+          <p>
+             By simplifying travel and consolidating payments, your card aims to streamline the commuting process and enhance convenience for users.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq">
+        <button class="accordion">
+          Is the TravelEase card reloadable?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="pannel">
+          <p>
+            Yes, the TravelEase card is reloadable. Users can easily top up their card balance online, ensuring they always have sufficient funds for their daily commute.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq">
+        <button class="accordion">
+          What are the advantages of using TravelEase card instead of cash?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="pannel">
+          <p>
+            With the E-Card, travelers can leave cash behind and avoid long ticket lines. Users can quickly and easily top up their card balance online, saving them precious time during their daily commute
+          </p>
+        </div>
+      </div>
+
+      <div class="faq">
+        <button class="accordion">
+          How does TravelEase promote sustainable urban mobility?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="pannel">
+          <p>
+            TravelEase promotes sustainable urban mobility by integrating multiple transportation options into a single card, encouraging the use of public transport over private vehicles and thereby reducing traffic congestion and environmental impact.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq">
+        <button class="accordion">
+          How does the TravelEase card ensure health safety, especially during pandemics?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="pannel">
+          <p>
+            The TravelEase card ensures health safety by offering contactless payments, minimizing physical contact, and enhancing sanitation. Passengers can simply tap their card on the scanner without the need for handling cash or paper tickets.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      var acc = document.getElementsByClassName("accordion");
+      var i;
+
+      for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+          this.parentElement.classList.toggle("active");
+
+          var pannel = this.nextElementSibling;
+
+          if (pannel.style.display === "block") {
+            pannel.style.display = "none";
+          } else {
+            pannel.style.display = "block";
+          }
+        });
+      }
+    </script>
+  </body>
+</html>
